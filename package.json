@@ -1,0 +1,52 @@
+{
+  "name": "dott-wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "/root/.bun/bin/bun server/index.ts",
+    "start": "/root/.bun/bin/bun run build && /root/.bun/bin/bun run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@codemirror/lang-markdown": "^6.5.0",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "@tiptap/extension-link": "^3.20.0",
+    "@tiptap/react": "^3.20.0",
+    "@tiptap/starter-kit": "^3.20.0",
+    "@tiptap/suggestion": "^3.20.0",
+    "clsx": "^2.1.1",
+    "codemirror": "^6.0.2",
+    "front-matter": "^4.0.2",
+    "highlight.js": "^11.11.1",
+    "hono": "^4.12.2",
+    "lucide-react": "^0.575.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "tailwind-merge": "^3.5.0",
+    "tippy.js": "^6.3.7",
+    "tiptap-markdown": "^0.9.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}

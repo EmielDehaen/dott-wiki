@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+:root {
+  font-family: var(--font-sans);
+}
+
+/* Aggressive styles for the editor content */
+.ProseMirror {
+  outline: none !important;
+  @apply min-h-[600px] p-20;
+}
+
+/* Direct element targeting within the editor to ensure visibility */
+.ProseMirror h1 { 
+  display: block !important;
+  font-size: 2.25rem !important; 
+  font-weight: 900 !important; 
+  margin-top: 2rem !important; 
+  margin-bottom: 1.5rem !important; 
+  line-height: 1.2 !important;
+  color: #0f172a !important; /* slate-900 */
+}
+
+.ProseMirror h2 { 
+  display: block !important;
+  font-size: 1.875rem !important; 
+  font-weight: 800 !important; 
+  margin-top: 1.5rem !important; 
+  margin-bottom: 1rem !important;
+  color: #1e293b !important; /* slate-800 */
+}
+
+.ProseMirror h3 { 
+  display: block !important;
+  font-size: 1.5rem !important; 
+  font-weight: 700 !important; 
+  margin-top: 1.25rem !important; 
+  margin-bottom: 0.75rem !important;
+  color: #1e293b !important; /* slate-800 */
+}
+
+.ProseMirror p { 
+  display: block !important;
+  margin-bottom: 1rem !important; 
+  line-height: 1.6 !important;
+  color: #475569 !important; /* slate-600 */
+}
+
+.ProseMirror ul { 
+  display: block !important;
+  list-style-type: disc !important; 
+  padding-left: 2rem !important; 
+  margin-bottom: 1rem !important; 
+}
+
+.ProseMirror ol { 
+  display: block !important;
+  list-style-type: decimal !important; 
+  padding-left: 2rem !important; 
+  margin-bottom: 1rem !important; 
+}
+
+.ProseMirror li { 
+  display: list-item !important;
+  margin-bottom: 0.5rem !important;
+  color: #475569 !important; /* slate-600 */
+}
+
+.ProseMirror a { 
+  color: #2563eb !important; /* blue-600 */
+  font-weight: 700 !important; 
+  text-decoration: underline !important;
+  text-decoration-style: dashed !important;
+  text-underline-offset: 4px !important;
+  cursor: pointer !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+}
